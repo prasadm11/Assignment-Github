@@ -1,0 +1,14 @@
+C:\Users\User\source\repos\Assignment\A1\bin\Debug\net8.0\A1.exe
+C:\Users\User\source\repos\Assignment\A1\bin\Debug\net8.0\A1.deps.json
+C:\Users\User\source\repos\Assignment\A1\bin\Debug\net8.0\A1.runtimeconfig.json
+C:\Users\User\source\repos\Assignment\A1\bin\Debug\net8.0\A1.dll
+C:\Users\User\source\repos\Assignment\A1\bin\Debug\net8.0\A1.pdb
+C:\Users\User\source\repos\Assignment\A1\obj\Debug\net8.0\A1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\Assignment\A1\obj\Debug\net8.0\A1.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Assignment\A1\obj\Debug\net8.0\A1.AssemblyInfo.cs
+C:\Users\User\source\repos\Assignment\A1\obj\Debug\net8.0\A1.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Assignment\A1\obj\Debug\net8.0\A1.dll
+C:\Users\User\source\repos\Assignment\A1\obj\Debug\net8.0\refint\A1.dll
+C:\Users\User\source\repos\Assignment\A1\obj\Debug\net8.0\A1.pdb
+C:\Users\User\source\repos\Assignment\A1\obj\Debug\net8.0\A1.genruntimeconfig.cache
+C:\Users\User\source\repos\Assignment\A1\obj\Debug\net8.0\ref\A1.dll

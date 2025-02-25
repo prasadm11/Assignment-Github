@@ -1,0 +1,14 @@
+C:\Users\User\source\repos\Assignment\A2\bin\Debug\net8.0\A2.exe
+C:\Users\User\source\repos\Assignment\A2\bin\Debug\net8.0\A2.deps.json
+C:\Users\User\source\repos\Assignment\A2\bin\Debug\net8.0\A2.runtimeconfig.json
+C:\Users\User\source\repos\Assignment\A2\bin\Debug\net8.0\A2.dll
+C:\Users\User\source\repos\Assignment\A2\bin\Debug\net8.0\A2.pdb
+C:\Users\User\source\repos\Assignment\A2\obj\Debug\net8.0\A2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\Assignment\A2\obj\Debug\net8.0\A2.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Assignment\A2\obj\Debug\net8.0\A2.AssemblyInfo.cs
+C:\Users\User\source\repos\Assignment\A2\obj\Debug\net8.0\A2.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Assignment\A2\obj\Debug\net8.0\A2.dll
+C:\Users\User\source\repos\Assignment\A2\obj\Debug\net8.0\refint\A2.dll
+C:\Users\User\source\repos\Assignment\A2\obj\Debug\net8.0\A2.pdb
+C:\Users\User\source\repos\Assignment\A2\obj\Debug\net8.0\A2.genruntimeconfig.cache
+C:\Users\User\source\repos\Assignment\A2\obj\Debug\net8.0\ref\A2.dll
