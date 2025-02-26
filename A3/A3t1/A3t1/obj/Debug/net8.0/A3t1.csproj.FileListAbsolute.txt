@@ -1,0 +1,15 @@
+C:\Users\User\source\repos\Assignment\A3\A3t1\A3t1\bin\Debug\net8.0\A3t1.exe
+C:\Users\User\source\repos\Assignment\A3\A3t1\A3t1\bin\Debug\net8.0\A3t1.deps.json
+C:\Users\User\source\repos\Assignment\A3\A3t1\A3t1\bin\Debug\net8.0\A3t1.runtimeconfig.json
+C:\Users\User\source\repos\Assignment\A3\A3t1\A3t1\bin\Debug\net8.0\A3t1.dll
+C:\Users\User\source\repos\Assignment\A3\A3t1\A3t1\bin\Debug\net8.0\A3t1.pdb
+C:\Users\User\source\repos\Assignment\A3\A3t1\A3t1\obj\Debug\net8.0\A3t1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\Assignment\A3\A3t1\A3t1\obj\Debug\net8.0\A3t1.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Assignment\A3\A3t1\A3t1\obj\Debug\net8.0\A3t1.AssemblyInfo.cs
+C:\Users\User\source\repos\Assignment\A3\A3t1\A3t1\obj\Debug\net8.0\A3t1.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Assignment\A3\A3t1\A3t1\obj\Debug\net8.0\A3t1.sourcelink.json
+C:\Users\User\source\repos\Assignment\A3\A3t1\A3t1\obj\Debug\net8.0\A3t1.dll
+C:\Users\User\source\repos\Assignment\A3\A3t1\A3t1\obj\Debug\net8.0\refint\A3t1.dll
+C:\Users\User\source\repos\Assignment\A3\A3t1\A3t1\obj\Debug\net8.0\A3t1.pdb
+C:\Users\User\source\repos\Assignment\A3\A3t1\A3t1\obj\Debug\net8.0\A3t1.genruntimeconfig.cache
+C:\Users\User\source\repos\Assignment\A3\A3t1\A3t1\obj\Debug\net8.0\ref\A3t1.dll
