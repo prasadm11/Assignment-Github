@@ -1,0 +1,15 @@
+C:\Users\User\source\repos\Assignment\A4\A4t2\A4t2\A4t2\bin\Debug\net8.0\A4t2.exe
+C:\Users\User\source\repos\Assignment\A4\A4t2\A4t2\A4t2\bin\Debug\net8.0\A4t2.deps.json
+C:\Users\User\source\repos\Assignment\A4\A4t2\A4t2\A4t2\bin\Debug\net8.0\A4t2.runtimeconfig.json
+C:\Users\User\source\repos\Assignment\A4\A4t2\A4t2\A4t2\bin\Debug\net8.0\A4t2.dll
+C:\Users\User\source\repos\Assignment\A4\A4t2\A4t2\A4t2\bin\Debug\net8.0\A4t2.pdb
+C:\Users\User\source\repos\Assignment\A4\A4t2\A4t2\A4t2\obj\Debug\net8.0\A4t2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\Assignment\A4\A4t2\A4t2\A4t2\obj\Debug\net8.0\A4t2.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Assignment\A4\A4t2\A4t2\A4t2\obj\Debug\net8.0\A4t2.AssemblyInfo.cs
+C:\Users\User\source\repos\Assignment\A4\A4t2\A4t2\A4t2\obj\Debug\net8.0\A4t2.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Assignment\A4\A4t2\A4t2\A4t2\obj\Debug\net8.0\A4t2.sourcelink.json
+C:\Users\User\source\repos\Assignment\A4\A4t2\A4t2\A4t2\obj\Debug\net8.0\A4t2.dll
+C:\Users\User\source\repos\Assignment\A4\A4t2\A4t2\A4t2\obj\Debug\net8.0\refint\A4t2.dll
+C:\Users\User\source\repos\Assignment\A4\A4t2\A4t2\A4t2\obj\Debug\net8.0\A4t2.pdb
+C:\Users\User\source\repos\Assignment\A4\A4t2\A4t2\A4t2\obj\Debug\net8.0\A4t2.genruntimeconfig.cache
+C:\Users\User\source\repos\Assignment\A4\A4t2\A4t2\A4t2\obj\Debug\net8.0\ref\A4t2.dll
