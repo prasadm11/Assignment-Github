@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\Assignment\\Assignment6\\Task1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{12C23F54-19F0-4A8D-8D66-C23E996C4D27}|Task1\\Task1.csproj|c:\\users\\user\\source\\repos\\assignment\\assignment6\\task1\\task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12C23F54-19F0-4A8D-8D66-C23E996C4D27}|Task1\\Task1.csproj|solutionrelative:task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12C23F54-19F0-4A8D-8D66-C23E996C4D27}|Task1\\Task1.csproj|c:\\users\\user\\source\\repos\\assignment\\assignment6\\task1\\task1\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12C23F54-19F0-4A8D-8D66-C23E996C4D27}|Task1\\Task1.csproj|solutionrelative:task1\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12C23F54-19F0-4A8D-8D66-C23E996C4D27}|Task1\\Task1.csproj|c:\\users\\user\\source\\repos\\assignment\\assignment6\\task1\\task1\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12C23F54-19F0-4A8D-8D66-C23E996C4D27}|Task1\\Task1.csproj|solutionrelative:task1\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Assignment\\Assignment6\\Task1\\Task1\\Customer.cs",
+              "RelativeDocumentMoniker": "Task1\\Customer.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Assignment\\Assignment6\\Task1\\Task1\\Customer.cs",
+              "RelativeToolTip": "Task1\\Customer.cs",
+              "ViewState": "AgIAAAwAAADAmZmZmZk4wBgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T04:36:54.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Bank.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Assignment\\Assignment6\\Task1\\Task1\\Bank.cs",
+              "RelativeDocumentMoniker": "Task1\\Bank.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Assignment\\Assignment6\\Task1\\Task1\\Bank.cs",
+              "RelativeToolTip": "Task1\\Bank.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T04:36:20.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Assignment\\Assignment6\\Task1\\Task1\\Program.cs",
+              "RelativeDocumentMoniker": "Task1\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Assignment\\Assignment6\\Task1\\Task1\\Program.cs",
+              "RelativeToolTip": "Task1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T04:27:58.587Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
