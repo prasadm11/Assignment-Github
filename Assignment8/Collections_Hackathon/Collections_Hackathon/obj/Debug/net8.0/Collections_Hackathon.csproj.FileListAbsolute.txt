@@ -1,0 +1,15 @@
+C:\Users\User\source\repos\Assignment\Assignment8\Collections_Hackathon\Collections_Hackathon\bin\Debug\net8.0\Collections_Hackathon.exe
+C:\Users\User\source\repos\Assignment\Assignment8\Collections_Hackathon\Collections_Hackathon\bin\Debug\net8.0\Collections_Hackathon.deps.json
+C:\Users\User\source\repos\Assignment\Assignment8\Collections_Hackathon\Collections_Hackathon\bin\Debug\net8.0\Collections_Hackathon.runtimeconfig.json
+C:\Users\User\source\repos\Assignment\Assignment8\Collections_Hackathon\Collections_Hackathon\bin\Debug\net8.0\Collections_Hackathon.dll
+C:\Users\User\source\repos\Assignment\Assignment8\Collections_Hackathon\Collections_Hackathon\bin\Debug\net8.0\Collections_Hackathon.pdb
+C:\Users\User\source\repos\Assignment\Assignment8\Collections_Hackathon\Collections_Hackathon\obj\Debug\net8.0\Collections_Hackathon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\Assignment\Assignment8\Collections_Hackathon\Collections_Hackathon\obj\Debug\net8.0\Collections_Hackathon.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Assignment\Assignment8\Collections_Hackathon\Collections_Hackathon\obj\Debug\net8.0\Collections_Hackathon.AssemblyInfo.cs
+C:\Users\User\source\repos\Assignment\Assignment8\Collections_Hackathon\Collections_Hackathon\obj\Debug\net8.0\Collections_Hackathon.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Assignment\Assignment8\Collections_Hackathon\Collections_Hackathon\obj\Debug\net8.0\Collections_Hackathon.sourcelink.json
+C:\Users\User\source\repos\Assignment\Assignment8\Collections_Hackathon\Collections_Hackathon\obj\Debug\net8.0\Collections_Hackathon.dll
+C:\Users\User\source\repos\Assignment\Assignment8\Collections_Hackathon\Collections_Hackathon\obj\Debug\net8.0\refint\Collections_Hackathon.dll
+C:\Users\User\source\repos\Assignment\Assignment8\Collections_Hackathon\Collections_Hackathon\obj\Debug\net8.0\Collections_Hackathon.pdb
+C:\Users\User\source\repos\Assignment\Assignment8\Collections_Hackathon\Collections_Hackathon\obj\Debug\net8.0\Collections_Hackathon.genruntimeconfig.cache
+C:\Users\User\source\repos\Assignment\Assignment8\Collections_Hackathon\Collections_Hackathon\obj\Debug\net8.0\ref\Collections_Hackathon.dll
