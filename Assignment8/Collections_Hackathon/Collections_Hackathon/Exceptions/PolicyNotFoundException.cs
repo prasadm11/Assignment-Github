@@ -10,8 +10,5 @@ namespace Collections_Hackathon.Exceptions
     {
         public PolicyNotFoundException(int policyID) 
             : base($"Policy with ID {policyID} not found.") { }
-
-
-
     }
 }
