@@ -54,8 +54,7 @@
               "RelativeToolTip": "Collections_Hackathon\\Repository\\PolicyRepository.cs",
               "ViewState": "AgIAACUAAABQlJmZmZkJwCUAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T09:37:14.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T09:37:14.114Z"
             },
             {
               "$type": "Document",
@@ -67,8 +66,7 @@
               "RelativeToolTip": "Collections_Hackathon\\Exceptions\\PolicyNotFoundException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T09:35:49.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T09:35:49.564Z"
             },
             {
               "$type": "Document",
@@ -80,8 +78,7 @@
               "RelativeToolTip": "Collections_Hackathon\\Interfaces\\IPolicyRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T09:34:59.691Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T09:34:59.691Z"
             },
             {
               "$type": "Document",
@@ -91,7 +88,7 @@
               "RelativeDocumentMoniker": "Collections_Hackathon\\Models\\Policy.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\Assignment\\Assignment8\\Collections_Hackathon\\Collections_Hackathon\\Models\\Policy.cs",
               "RelativeToolTip": "Collections_Hackathon\\Models\\Policy.cs",
-              "ViewState": "AgIAABUAAABwmZmZmZk3wCIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T09:34:06.897Z",
               "EditorCaption": ""
@@ -106,8 +103,7 @@
               "RelativeToolTip": "Collections_Hackathon\\Program.cs",
               "ViewState": "AgIAABIAAAAAaGZmZmYswGgAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T07:42:16.777Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T07:42:16.777Z"
             },
             {
               "$type": "Document",
@@ -119,8 +115,7 @@
               "RelativeToolTip": "Collections_Hackathon\\Exceptions\\InvalidPolicyDateException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T11:35:02.099Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T11:35:02.099Z"
             },
             {
               "$type": "Document",
@@ -132,8 +127,7 @@
               "RelativeToolTip": "Collections_Hackathon\\Exceptions\\DuplicatePolicyException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T11:27:14.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T11:27:14.815Z"
             },
             {
               "$type": "Document",
