@@ -1,0 +1,61 @@
+﻿@model VehicleRentalSys.Models.Booking
+
+@{
+    ViewData["Title"] = "Create Booking";
+}
+
+<h2>Create a Booking</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label>User ID</label>
+        <input type="text" class="form-control" value="@Context.Session.GetInt32("UserId")" readonly />
+        <input type="hidden" name="UserId" value="@Context.Session.GetInt32("UserId")" />
+    </div>
+
+    <div class="form-group">
+        <label>Vehicle</label>
+        <select asp-for="VehicleId" class="form-control" asp-items="ViewBag.VehicleId" id="vehicleDropdown" required>
+            <option value="">-- Select Vehicle --</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Start Date</label>
+        <input type="date" asp-for="StartDate" class="form-control" id="startDate" required />
+    </div>
+
+    <div class="form-group">
+        <label>End Date</label>
+        <input type="date" asp-for="EndDate" class="form-control" id="endDate" required />
+    </div>
+
+    <div class="form-group">
+        <label>Total Amount</label>
+        <input type="text" asp-for="TotalAmount" class="form-control" id="totalAmount" readonly />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Book Vehicle</button>
+</form>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $("#vehicleDropdown, #startDate, #endDate").change(function () {
+                var vehicleId = $("#vehicleDropdown").val();
+                var startDate = new Date($("#startDate").val());
+                var endDate = new Date($("#endDate").val());
+
+                if (vehicleId && startDate && endDate && endDate > startDate) {
+                    $.getJSON("/Booking/GetVehicleRentalPrice", { vehicleId: vehicleId }, function (data) {
+                        var days = (endDate - startDate) / (1000 * 60 * 60 * 24);
+                        var total = days * data.rentalPrice;
+                        $("#totalAmount").val(total > 0 ? total : 0);
+                    });
+                } else {
+                    $("#totalAmount").val("");
+                }
+            });
+        });
+    </script>
+}
