@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,7 @@ using VehicleRentalSys.Services.Interface;
 
 namespace VehicleRentalSys.Controllers
 {
+    //[Authorize]
     public class BookingController : Controller
     {
         private readonly IBookingService _bookingService;

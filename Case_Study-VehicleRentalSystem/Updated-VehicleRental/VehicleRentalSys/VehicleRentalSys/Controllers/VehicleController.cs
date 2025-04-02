@@ -3,9 +3,11 @@ using Microsoft.AspNetCore.Http;
 using System.Threading.Tasks;
 using VehicleRentalSys.Models;
 using VehicleRentalSys.Services.Interface;
+using Microsoft.AspNetCore.Authorization;
 
 namespace VehicleRentalSys.Controllers
 {
+    //[Authorize]
     public class VehicleController : Controller
     {
         private readonly IVehicleService _vehicleService;

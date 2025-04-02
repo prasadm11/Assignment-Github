@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 300px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: darkblue;
+        }
+        .toggle-btn {
+            background: gray;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 id="form-title">Login</h2>
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <input type="text" id="role" placeholder="Role" style="display:block;">
+    <button onclick="handleSubmit()" id="submit-btn">Login</button>
+    <button class="toggle-btn" onclick="toggleForm()">Switch to Register</button>
+    <p id="message"></p>
+</div>
+
+<script>
+    let isRegister = false;
+
+    function toggleForm() {
+        isRegister = !isRegister;
+        document.getElementById("form-title").innerText = isRegister ? "Register" : "Login";
+        document.getElementById("submit-btn").innerText = isRegister ? "Register" : "Login";
+    }
+
+    async function handleSubmit() {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        const role = document.getElementById("role").value;
+        const message = document.getElementById("message");
+
+        const url = isRegister ? "https://localhost:7266/api/auth/register" : "https://localhost:7266/api/auth/login";
+        
+        const data = { username, password, role };
+
+        try {
+            const response = await fetch(url, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data)
+            });
+
+            const result = await response.json();
+            if (response.ok) {
+                message.style.color = "green";
+                message.innerText = isRegister ? "Registration successful!" : "Login successful!";
+                
+                if (!isRegister) {
+                    localStorage.setItem("token", result.token);
+                    setTimeout(() => window.location.href = "dashboard.html", 1000);
+                }
+            } else {
+                message.style.color = "red";
+                message.innerText = result.errors?.Role ? result.errors.Role[0] : result;
+            }
+        } catch (error) {
+            console.error(error);
+            message.style.color = "red";
+            message.innerText = "An error occurred.";
+        }
+    }
+</script>
+
+</body>
+</html>
