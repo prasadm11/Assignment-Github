@@ -31,8 +31,6 @@ namespace LibraryManagement.API.Controllers
         public async Task<IActionResult> GetBookById(int id)
         {
             var book = await _bookRepository.GetByIdAsync(id);
-            if (book == null)
-                return NotFound();
             return Ok(book);
         }
 

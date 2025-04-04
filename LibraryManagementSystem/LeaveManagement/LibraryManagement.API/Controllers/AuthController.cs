@@ -37,10 +37,10 @@ namespace LibraryManagement.API.Controllers
 
             await _userManager.AddToRoleAsync(user, "User");
 
-            // ✅ Automatically Create a Member Entry
+            
             var member = new Member
             {
-                UserId = user.Id, // Link to ApplicationUser
+                UserId = user.Id, 
                 Name = model.Name,
                 Email = model.Email,
                 MembershipDate = DateTime.UtcNow,

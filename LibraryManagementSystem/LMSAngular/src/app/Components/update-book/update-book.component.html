@@ -1,0 +1,35 @@
+<h2>Update Book</h2>
+<form [formGroup]="updateBookForm" (ngSubmit)="onSubmit()">
+  <div class="mb-3">
+    <label class="form-label">Title</label>
+    <input type="text" class="form-control" formControlName="title" />
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Author</label>
+    <input type="text" class="form-control" formControlName="author" />
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">ISBN</label>
+    <input type="text" class="form-control" formControlName="isbn" />
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Category ID</label>
+    <input type="number" class="form-control" formControlName="categoryId" />
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Published Year</label>
+    <input type="number" class="form-control" formControlName="publishedYear" />
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Copies Available</label>
+    <input type="number" class="form-control" formControlName="copiesAvailable" />
+  </div>
+
+  <button type="submit" class="btn btn-primary">Update</button>
+  <button type="button" class="btn btn-secondary" (click)="router.navigate(['/admin-dashboard'])">Cancel</button>
+</form>

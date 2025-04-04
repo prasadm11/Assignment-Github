@@ -16,6 +16,25 @@ namespace LibraryManagement.API.Controllers
             _loanRepository = loanRepository;
         }
 
+
+
+        // GET : loan by id
+        [Authorize(Roles = "Admin,User")]
+        [HttpGet("user-loans")]
+        public async Task<IActionResult> GetLoansByUser()
+        {
+            var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+
+            if (string.IsNullOrEmpty(userId))
+                return Unauthorized("Invalid user ID");
+
+            var allLoans = await _loanRepository.GetAllAsync();
+            var userLoans = allLoans.Where(loan => loan.UserId == userId).ToList();
+
+            return Ok(userLoans);
+        }
+
+
         // GET: api/loans
         [Authorize(Roles = "Admin,User")]
         [HttpGet]
@@ -31,14 +50,11 @@ namespace LibraryManagement.API.Controllers
         public async Task<IActionResult> GetLoanById(int id)
         {
             var loan = await _loanRepository.GetByIdAsync(id);
-            if (loan == null)
-                return NotFound($"Loan with ID {id} not found.");
-
             return Ok(loan);
         }
 
         // POST: api/loans
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Admin,User")]
         [HttpPost]
         public async Task<IActionResult> AddLoan([FromBody] Loan loan)
         {
@@ -66,7 +82,7 @@ namespace LibraryManagement.API.Controllers
         }
 
         // DELETE: api/loans/{id}
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteLoan(int id)
         {

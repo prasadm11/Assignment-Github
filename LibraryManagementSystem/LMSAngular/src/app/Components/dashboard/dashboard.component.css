@@ -1,0 +1,22 @@
+.dashboard-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.content {
+    margin-top: 50px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.btn-danger {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-danger:hover {
+    transform: scale(1.05);
+}

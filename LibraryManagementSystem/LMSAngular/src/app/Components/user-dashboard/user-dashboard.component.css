@@ -1,0 +1,17 @@
+.user-dashboard-container {
+    min-height: 100vh;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .table {
+    margin-top: 15px;
+  }
+  
+  .btn {
+    min-width: 120px;
+  }
+  

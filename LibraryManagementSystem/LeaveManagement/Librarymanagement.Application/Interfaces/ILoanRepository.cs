@@ -9,5 +9,7 @@ namespace LibraryManagement.Application.Interfaces
         Task AddAsync(Loan loan);
         Task UpdateAsync(Loan loan);
         Task DeleteAsync(int id);
+        Task<IEnumerable<Loan>> GetLoansByUserIdAsync(string userId);
+
     }
 }

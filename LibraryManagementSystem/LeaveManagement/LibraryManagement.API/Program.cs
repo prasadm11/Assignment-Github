@@ -10,6 +10,7 @@ using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Librarymanagement.Application.Interfaces;
 using LibraryManagement.Infrastructure.Services;
+using LibraryManagement.API.Middleware;
 
 namespace LibraryManagement.API
 {
@@ -21,7 +22,7 @@ namespace LibraryManagement.API
             var builder = WebApplication.CreateBuilder(args);
 
 
-            //Adding Cors here 
+            
 
             builder.Services.AddCors(options =>
             {
@@ -112,6 +113,8 @@ namespace LibraryManagement.API
 
             var app = builder.Build();
 
+
+            app.UseMiddleware<ExceptionHandlingMiddleware>();  //for exceptions
             app.UseCors(MyAllowSpecificOrigins);
 
             // Configure the HTTP request pipeline
@@ -179,15 +182,15 @@ namespace LibraryManagement.API
 }
 
 
-//user
+//users
 //{
 //    "name": "Sandesh Naik",
 //  "email": "skthemes123@gmail.com",
 //  "password": "Sk@123"
 //}
 //{
-//    "name": "Ravi Desai",
-//  "email": "Rds123@gmail.com",
-//  "password": "Rds@123"
+//    "name": "Ankit Sen",
+//  "email": "Aks123@gmail.com",
+//  "password": "Aks@123"
 //}
 

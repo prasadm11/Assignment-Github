@@ -1,4 +1,5 @@
-﻿using LibraryManagement.Application.Interfaces;
+﻿using Librarymanagement.Application.Exceptions;
+using LibraryManagement.Application.Interfaces;
 using LibraryManagement.Domain;
 using LibraryManagement.Infrastructure.Context;
 using Microsoft.EntityFrameworkCore;
@@ -23,7 +24,15 @@ namespace LibraryManagement.Infrastructure.Repositories
 
         public async Task<Book?> GetByIdAsync(int id)
         {
-            return await _context.Books.FindAsync(id);
+            //return await _context.Books.FindAsync(id);
+
+            var book = await _context.Books.FindAsync(id);
+            if (book == null)
+            {
+                throw new BookNotFoundException($"Book with ID {id} not found.");
+            }
+            return book;
+
         }
 
         public async Task AddAsync(Book book)

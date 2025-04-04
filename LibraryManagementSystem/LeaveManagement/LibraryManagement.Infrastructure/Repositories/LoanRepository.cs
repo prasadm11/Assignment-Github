@@ -1,8 +1,10 @@
-﻿using LibraryManagement.Application.Interfaces;
+﻿using Librarymanagement.Application.Exceptions;
+using LibraryManagement.Application.Interfaces;
 using LibraryManagement.Domain;
 using LibraryManagement.Infrastructure.Context;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using System.Net;
 using System.Threading.Tasks;
 
 namespace LibraryManagement.Infrastructure.Repositories
@@ -23,14 +25,22 @@ namespace LibraryManagement.Infrastructure.Repositories
 
         public async Task<Loan?> GetByIdAsync(int id)
         {
-            return await _context.Loans.FindAsync(id);
+
+            //return await _context.Loans.FindAsync(id);
+
+            var loan = await _context.Loans.FindAsync(id);
+            if (loan == null)
+            {
+                throw new LoanProcessingException($"Loan with ID {id} not found.");
+            }
+            return loan;
         }
 
         public async Task AddAsync(Loan loan)
         {
             await _context.Loans.AddAsync(loan);
             await _context.SaveChangesAsync();
-        }
+        }       
 
         public async Task UpdateAsync(Loan loan)
         {
@@ -47,5 +57,11 @@ namespace LibraryManagement.Infrastructure.Repositories
                 await _context.SaveChangesAsync();
             }
         }
+
+        public async Task<IEnumerable<Loan>> GetLoansByUserIdAsync(string userId)
+        {
+            return await _context.Loans.Where(l => l.UserId == userId).ToListAsync();
+        }
+
     }
 }

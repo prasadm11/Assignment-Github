@@ -1,0 +1,27 @@
+<div class="container mt-4">
+    <h2 class="text-center">📚 My Borrowed Books</h2>
+  
+    <table class="table table-striped mt-3">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Book ID</th>
+          <th>Loan Date</th>
+          <th>Due Date</th>
+          <th>Return Date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let loan of loans; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ loan.bookId }}</td>
+          <td>{{ loan.loanDate | date }}</td>
+          <td>{{ loan.dueDate | date }}</td>
+          <td>{{ loan.returnDate ? (loan.returnDate | date) : 'Not Returned' }}</td>
+          <td>{{ loan.status }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

@@ -1,0 +1,58 @@
+<div class="container mt-4">
+    <h2 class="text-center">📖 Create a Booking</h2>
+  
+    <form (ngSubmit)="createBooking()">
+      <!-- Select Book Dropdown -->
+      <div class="mb-3">
+        <label for="book" class="form-label">Select Book</label>
+        <select class="form-select" id="book" [(ngModel)]="selectedBookId" name="book" required>
+          <option *ngFor="let book of books" [value]="book.id">
+            {{ book.title }} by {{ book.author }}
+          </option>
+        </select>
+      </div>
+  
+      <!-- Loan Date Picker -->
+      <div class="mb-3">
+        <label for="loanDate" class="form-label">Loan Date</label>
+        <input
+          type="date"
+          id="loanDate"
+          class="form-control"
+          [(ngModel)]="loanDate"
+          name="loanDate"
+          required
+        />
+      </div>
+  
+      <!-- Due Date Picker -->
+      <div class="mb-3">
+        <label for="dueDate" class="form-label">Due Date</label>
+        <input
+          type="date"
+          id="dueDate"
+          class="form-control"
+          [(ngModel)]="dueDate"
+          name="dueDate"
+          required
+        />
+      </div>
+  
+      <!-- Return Date Picker -->
+      <div class="mb-3">
+        <label for="returnDate" class="form-label">Return Date (Optional)</label>
+        <input
+          type="date"
+          id="returnDate"
+          class="form-control"
+          [(ngModel)]="returnDate"
+          name="returnDate"
+        />
+      </div>
+  
+      <!-- Submit & Cancel Buttons -->
+      <button type="submit" class="btn btn-primary">Book Now</button>
+      <button type="button" class="btn btn-secondary ms-2" (click)="router.navigate(['/'])">Cancel</button>
+    </form>
+  </div>
+  

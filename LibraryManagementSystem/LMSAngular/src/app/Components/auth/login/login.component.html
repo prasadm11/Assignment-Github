@@ -1,0 +1,35 @@
+<div class="container-fluid bg-img d-flex justify-content-center align-items-center vh-100">
+        <div class="card p-5 shadow-lg login-card">
+            <h2 class="text-center mb-4 animate-fade-in">Login</h2>
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="animate-slide-in">
+                <div class="mb-4">
+                    <label for="email" class="form-label">Email</label>
+                    <input id="email" formControlName="email" type="text" class="form-control input-animate" required />
+                    <div *ngIf="loginForm.get('email')?.touched && loginForm.get('email')?.invalid"
+                        class="text-danger small">
+                        Email is required
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label for="password" class="form-label">Password</label>
+                    <input id="password" formControlName="password" type="password" class="form-control input-animate"
+                        required />
+                    <div *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid"
+                        class="text-danger small">
+                        Password is required
+                    </div>
+                </div>
+
+                <!-- Login Button -->
+                <button type="submit" class="btn btn-primary w-100 btn-animate"
+                    [disabled]="loginForm.invalid">Login</button>
+
+                <!-- Register Button -->
+                <button type="button" class="btn btn-outline-secondary w-100 btn-animate mt-3"
+                    (click)="onRegister()">Register</button>
+
+                <p *ngIf="errorMessage" class="text-danger text-center mt-3">{{ errorMessage }}</p>
+            </form>
+        </div>
+</div>

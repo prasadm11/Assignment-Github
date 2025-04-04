@@ -1,0 +1,89 @@
+<!-- Navbar -->
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand">📚 User Dashboard</a>
+        <div class="d-flex align-items-center text-white">
+            <span class="me-3">
+                <strong>Email:</strong> {{ userEmail }} | <strong>Role:</strong> {{ userRole }}
+            </span>
+            <button class="btn btn-danger btn-sm" (click)="logout()">Logout</button>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">📚 Available Books</h2>
+
+    <!-- Responsive Table -->
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Copies Available</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let book of books">
+                    <td>{{ book.id }}</td>
+                    <td>{{ book.title }}</td>
+                    <td>{{ book.author }}</td>
+                    <td>
+                        <span class="badge" [ngClass]="{
+                'bg-success': book.copiesAvailable > 5,
+                'bg-warning': book.copiesAvailable <= 5 && book.copiesAvailable > 0,
+                'bg-danger': book.copiesAvailable === 0
+              }">
+                            {{ book.copiesAvailable }}
+                        </span>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <!-- Card View for Mobile -->
+    <div class="row mt-4 d-md-none">
+        <div class="col-12" *ngFor="let book of books">
+            <div class="card mb-3 shadow">
+                <div class="card-body">
+                    <h5 class="card-title">{{ book.title }}</h5>
+                    <h6 class="card-subtitle text-muted">by {{ book.author }}</h6>
+                    <p class="mt-2">📖 Copies Available:
+                        <span class="badge" [ngClass]="{
+                'bg-success': book.copiesAvailable > 5,
+                'bg-warning': book.copiesAvailable <= 5 && book.copiesAvailable > 0,
+                'bg-danger': book.copiesAvailable === 0
+              }">
+                            {{ book.copiesAvailable }}
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Create Booking Button -->
+<div class="text-center my-3">
+    <button class="btn btn-success btn-sm" (click)="router.navigate(['/create-booking'])">
+        Create Booking
+      </button>
+      
+</div>
+<div class="text-center my-3">
+
+    <button  (click)="router.navigate(['/user-loans'])" class="btn btn-primary">View My Loans</button>
+
+</div>
+
+
+
+

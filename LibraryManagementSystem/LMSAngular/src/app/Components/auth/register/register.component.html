@@ -1,0 +1,51 @@
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card p-4 shadow-lg register-card">
+      <h2 class="text-center mb-3 animate-fade-in">Register</h2>
+  
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="animate-slide-in">
+        <!-- Name Field -->
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input id="name" formControlName="name" type="text" class="form-control input-animate" required />
+          <div *ngIf="registerForm.get('name')?.touched && registerForm.get('name')?.invalid" class="text-danger small">
+            Name is required
+          </div>
+        </div>
+  
+        <!-- Email Field -->
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input id="email" formControlName="email" type="email" class="form-control input-animate" required />
+          <div *ngIf="registerForm.get('email')?.touched && registerForm.get('email')?.invalid" class="text-danger small">
+            Valid email is required
+          </div>
+        </div>
+  
+        <!-- Password Field -->
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input id="password" formControlName="password" type="password" class="form-control input-animate" required />
+          <div *ngIf="registerForm.get('password')?.touched && registerForm.get('password')?.invalid" class="text-danger small">
+            Password must be at least 6 characters
+          </div>
+        </div>
+  
+        <!-- Confirm Password Field -->
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label">Confirm Password</label>
+          <input id="confirmPassword" formControlName="confirmPassword" type="password" class="form-control input-animate" required />
+          <div *ngIf="registerForm.get('confirmPassword')?.touched && registerForm.get('confirmPassword')?.invalid" class="text-danger small">
+            Please confirm your password
+          </div>
+        </div>
+  
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary w-100 btn-animate" [disabled]="registerForm.invalid">Register</button>
+      </form>
+  
+      <p class="text-center mt-3">
+        Already have an account? <a href="/login" class="text-decoration-none">Login</a>
+      </p>
+    </div>
+  </div>
+  

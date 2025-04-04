@@ -1,8 +1,8 @@
 ﻿using LibraryManagement.Application.Interfaces;
 using LibraryManagement.Domain;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-
 namespace LibraryManagement.API.Controllers
 {
     [Route("api/[controller]")]
@@ -10,10 +10,11 @@ namespace LibraryManagement.API.Controllers
     public class MembersController : ControllerBase
     {
         private readonly IMemberRepository _memberRepository;
-
-        public MembersController(IMemberRepository memberRepository)
+        private readonly UserManager<ApplicationUser> _userManager;
+        public MembersController(IMemberRepository memberRepository, UserManager<ApplicationUser> userManager)
         {
             _memberRepository = memberRepository;
+            _userManager = userManager;
         }
 
         // GET: api/members
@@ -38,6 +39,7 @@ namespace LibraryManagement.API.Controllers
         }
 
         // POST: api/members
+        [Authorize(Roles = "Admin,User")]
         [HttpPost]
         public async Task<IActionResult> AddMember([FromBody] Member member)
         {
@@ -76,5 +78,9 @@ namespace LibraryManagement.API.Controllers
             await _memberRepository.DeleteAsync(userId);
             return NoContent();
         }
+
+
+
+
     }
 }

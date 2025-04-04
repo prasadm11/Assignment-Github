@@ -1,0 +1,11 @@
+<h2>Update User</h2>
+<form (ngSubmit)="updateUser()">
+  <label for="name">Name:</label>
+  <input id="name" [(ngModel)]="member.name" name="name" required />
+
+  <label for="email">Email:</label>
+  <input id="email" [(ngModel)]="member.email" name="email" required />
+
+  <button type="submit">Update User</button>
+</form>
+<button (click)="router.navigate(['/admin-dashboard'])">Cancel</button>
